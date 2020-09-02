@@ -1,0 +1,41 @@
+
+/*==========  RESET STYLES  ==========*/
+	
+html {
+	overflow-y: scroll;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-text-size-adjust: none;
+	box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0px;
+	font-size: 0px;
+	display: block;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar,
+html:not(.touch-screen) *::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar-track,
+html:not(.touch-screen) *::-webkit-scrollbar-track {
+	background: #FFF;
+}
+
+html:not(.touch-screen)::-webkit-scrollbar-thumb,
+html:not(.touch-screen) *::-webkit-scrollbar-thumb {
+	background: #0fa7e1;
+}

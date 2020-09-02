@@ -1,0 +1,135 @@
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* RESET STYLES */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+html{overflow-y: scroll;}
+*{margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; -webkit-text-size-adjust:none;}
+.clear{clear:both; overflow:hidden; height:0px; font-size:0px; display: block;}
+html:not(.touch-screen)::-webkit-scrollbar,
+html:not(.touch-screen) *::-webkit-scrollbar {width: 5px; height: 5px;}
+html:not(.touch-screen)::-webkit-scrollbar-track,
+html:not(.touch-screen) *::-webkit-scrollbar-track {background: #FFF;}
+html:not(.touch-screen)::-webkit-scrollbar-thumb,
+html:not(.touch-screen) *::-webkit-scrollbar-thumb {background: #D91E44;}
+:focus, :hover, :active, :visited{outline: none;}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* GLOBAL SETTINGS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* main */
+html{height: 100%;}
+body{height: 100%; overflow: hidden;}
+#content-block{overflow: hidden; position: relative;} 
+.overflow-hidden{overflow: hidden;}
+html.overflow-hidden body{overflow: hidden;}
+.swiper-slide:not(:first-child){display: none;}
+/* spacers */
+.spacer{clear:both;}
+.spacer-lg{height: 180px;}
+.spacer-md{height: 90px;}
+.spacer-sm{height: 40px;}
+.spacer-xs{height: 20px;}
+/* breakpoints */
+@media (max-width: 575px){}
+@media (max-width: 768px){}
+@media (max-width: 991px){}
+@media (max-width: 1199px){}
+@media (max-width: 1368px){} 
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* TYPOGRAPHY */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+body{font-family: Arial, sans-serif; color: #000;}
+b, strong{font-weight: 700;}
+a{color: #D91E44;}
+a:hover{text-decoration: none;}
+ul, ol{list-style: none;}
+body, .text{font-size: 16px; line-height: 24px;}
+.text-sm{font-size: 14px; line-height: 20px;}
+.text-lg{font-size: 18px; line-height: 30px;}
+.text > *{margin-bottom: 20px;}
+.text > *:last-child{margin-bottom: 0;}
+.text img{max-width: 100%; height: auto; display: block;}
+.text ol{counter-reset: number;}
+.text ol li{padding-left: 0;}
+.text ol li:before{counter-increment: number; content: "#" counter(number); margin-right: 5px;}
+.text ul li{padding-left: 20px;}
+.text ul li:before{display: inline-block; width: 5px; height: 5px; background: #000; content: ""; vertical-align: middle; margin: 0 10px;}
+h1, .h1{font-size: 50px; line-height: 1.2em;}
+h2, .h2{font-size: 40px; line-height: 1.2em;}
+h3, .h3{font-size: 32px; line-height: 1.2em;}
+h4, .h4{font-size: 24px; line-height: 1.2em;}
+h5, .h5{font-size: 18px; line-height: 1.5em;}
+h6, .h6{font-size: 14px; line-height: 1.5em;}
+.text-truncate{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.text-left {text-align: left;}
+.text-center {text-align: center;}
+.text-right {text-align: right;}
+@media (min-width: 0) {
+    .text-xs-left {text-align: left;}
+    .text-xs-center {text-align: center;}
+    .text-xs-right {text-align: right;}
+}
+@media (min-width: 576px) {
+    .text-sm-left {text-align: left;}
+    .text-sm-center {text-align: center;}
+    .text-sm-right {text-align: right;}
+}
+@media (min-width: 768px) {
+    .text-md-left {text-align: left;}
+    .text-md-center {text-align: center;}
+    .text-md-right {text-align: right;}
+}
+@media (min-width: 992px) {
+    .text-lg-left {text-align: left;}
+    .text-lg-center {text-align: center;}
+    .text-lg-right {text-align: right;}
+}
+@media (min-width: 1200px) {
+    .text-xl-left {text-align: left;}
+    .text-xl-center {text-align: center;}
+    .text-xl-right {text-align: right;}
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* BUTTONS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.btn{display: inline-block; vertical-align: bottom; text-align: center; position: relative; cursor: pointer; text-decoration: none; border: none; padding: none; background: none;}
+.btn-md{font-size: 13px; line-height: 20px; padding: 10px 25px;}
+.btn-lg{font-size: 14px; line-height: 23px; padding: 12px 25px;}
+.btn-sm{font-size: 12px; line-height: 20px; padding: 5px 15px;}
+.btn-primary{background: #D91E44; color: #FFF;}
+.btn-secondary{background: #000; color: #FFF;}
+.btn-optional{background: #EEE;}
+.btn-block{display: block; width: 100%;}
+.btn-close{width: 40px; height: 40px; font-size: 20px; line-height: 40px; text-align: center;}
+.btn-close:before{content: "\02715"}
+@media (max-width: 575px) {
+    .btn{display: block; width: 100%;}
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* FORM ELEMENTS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{color: #222; opacity: 1;}
+input:-moz-placeholder, textarea:-moz-placeholder{color: #222; opacity: 1;}
+input::-moz-placeholder, textarea::-moz-placeholder{color: #222; opacity: 1;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{color: #222; opacity: 1;}
+input, textarea, select{border-radius: 0; background: none; border: none; margin: 0; width: 100%; padding: 0;}
+textarea{display: block; resize: none; overflow: auto;}
+select::-ms-expand{display: none;}
+.input{font-size: 15px; height: 51px; border: 1px solid #222; line-height: 51px; padding: 0 15px;}
+textarea.input{height: 80px; padding-top: 5px; padding-bottom: 5px; line-height: 18px;}
+.invalid{border-color: red; color: red;}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* COLORS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.color-primary{color: #000;}
+.color-secondary{color: #D91E44;}
+.color-white{color: #FFF;}
+.color-grey{color: #565656;}

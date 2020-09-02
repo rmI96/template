@@ -1,0 +1,50 @@
+/*==========  Swiper Style  ==========*/
+
+.swiper-entry {
+	position: relative;
+}
+
+.swiper-container {
+	z-index: auto;
+}
+
+.swiper-container:not(.swiper-no-swiping) .swiper-wrapper {
+	cursor: url(../img/drag.png) 16 9, ew-resize;
+}
+
+.swiper-container-vertical:not(.swiper-no-swiping) .swiper-wrapper {
+	cursor: url(../img/drag-vertical.png) 8 16, ns-resize;
+}
+
+.swiper-pagination {
+	line-height: 0;
+	z-index: 2;
+}
+
+.swiper-pagination.swiper-pagination-relative {
+	position: relative;
+	margin-top: 20px;
+	bottom: auto;
+}
+
+.single-slide-swiper .swiper-container .swiper-wrapper {
+	cursor: default;
+}
+
+/*==========  Hover  ==========*/
+
+// @media (min-width: 1200px){}
+
+/*==========  MEDIA QUERIES  ==========*/
+
+// @media (max-width: 1368px){}
+
+// @media (max-width: 1199px){}
+
+// @media (max-width: 991px){}
+
+// @media (max-width: 768px){}
+            
+// @media (max-width: 575px){}
+
+
